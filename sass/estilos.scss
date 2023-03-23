@@ -1,0 +1,94 @@
+$fonttitle: "poster-cut-neue", sans-serif;
+$primarycolor: #764c29;
+@import url(../css/generales.css);
+body {
+  background-image: url(../img/FONDO.png);
+  background-attachment: fixed;
+  overflow-x: hidden;
+  //   HEADER
+  .header {
+    text-align: center;
+    padding: 2rem 0;
+    // logo
+    &__logo {
+      text-align: center;
+      img {
+        height: 250px;
+        object-fit: contain;
+      }
+    }
+    // MENU
+    &__menu {
+      margin: auto;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      nav {
+        ul {
+          padding-left: 0;
+          display: flex;
+          li {
+            list-style: none;
+            padding-right: 1.2rem;
+            &:last-of-type {
+              padding-right: 0;
+            }
+            a {
+              color: #764c29;
+              text-decoration: none;
+              font-size: 1rem;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //   PRINCIPAL
+
+  .main {
+    &__tituloprincipal {
+      h1 {
+        font-size: 2rem;
+        font-family: $fonttitle;
+        color: $primarycolor;
+        max-width: 800px;
+        margin: auto;
+        text-align: center;
+      }
+    }
+    /* -------------------------------------------------------------------------- */
+    /*                                    RUTA                                    */
+    /* -------------------------------------------------------------------------- */
+
+    &__rutapaseodelosindios {
+      padding-top: 10rem;
+      .row {
+        & > div {
+          padding: 2rem 0;
+        }
+      }
+      img {
+        height: 550px;
+        object-fit: contain;
+      }
+    }
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /*                                   FOOTER                                   */
+  /* -------------------------------------------------------------------------- */
+
+  footer {
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: $primarycolor;
+    p {
+      color: #fff;
+      margin-bottom: 0;
+    }
+  }
+}
