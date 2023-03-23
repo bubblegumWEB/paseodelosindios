@@ -17,7 +17,7 @@
 
 .arrow.topdos {
 	transform: scaleX(-1) rotate(45deg);
-	margin-top: -300px;
+	margin-right: 150px;
 }
 
 .arrow.right {

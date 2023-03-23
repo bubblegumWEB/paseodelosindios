@@ -15,7 +15,7 @@ body .header__logo {
   text-align: center;
 }
 body .header__logo img {
-  height: 250px;
+  height: 300px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -56,10 +56,16 @@ body .main__tituloprincipal h1 {
   text-align: center;
 }
 body .main__rutapaseodelosindios {
-  padding-top: 10rem;
+  padding: 10rem 0 0 0;
+}
+body .main__rutapaseodelosindios .row {
+  position: relative;
 }
 body .main__rutapaseodelosindios .row > div {
   padding: 2rem 0;
+}
+body .main__rutapaseodelosindios .row > div:last-of-type {
+  padding: 2rem 0 0 0;
 }
 body .main__rutapaseodelosindios img {
   height: 550px;
